@@ -12,7 +12,7 @@ const links: Array<FooterLink> = [
   },
   {
     url: "https://www.instagram.com/clubatletismovillaverde/",
-    description: "Club Atletismo Villaverde en instagram",
+    description: "Club Atletismo Villaverde en Instagram",
     icon: "fa-brands:instagram",
     target: "_blank"
   },
@@ -20,6 +20,12 @@ const links: Array<FooterLink> = [
     url: "https://twitter.com/club_villaverde",
     description: "Club Atletismo Villaverde en twitter",
     icon: "fa-brands:twitter",
+    target: "_blank"
+  },
+  {
+    url: "https://www.youtube.com/@clubatletismovillaverde",
+    description: "Club Atletismo Villaverde en YouTube",
+    icon: "fa-brands:youtube",
     target: "_blank"
   }
 ];
@@ -29,7 +35,7 @@ const links: Array<FooterLink> = [
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <ul class="relative grid grid-cols-3 gap-3 sm:grid-cols-3">
+  <ul class="relative grid grid-cols-4 gap-4 sm:grid-cols-4">
     {
       links.map((link) => (
         <li>
