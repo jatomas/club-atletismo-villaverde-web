@@ -1,10 +1,8 @@
-# Astro Landing Page
+# Club Atletismo Villaverd website
 
 [![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
 
-> An Astro + Tailwind CSS example/template for landing pages.
-
-![Based on Astro Landing Page of Markus Hsi-Yang Fritz](https://github.com/mhyfritz/astro-landing-page)
+> [Based on Astro Landing Page of Markus Hsi-Yang Fritz](https://github.com/mhyfritz/astro-landing-page)
 
 ## Features
 
