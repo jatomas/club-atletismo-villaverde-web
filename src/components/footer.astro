@@ -5,25 +5,23 @@ import type { FooterLink } from "~/types";
 
 const links: Array<FooterLink> = [
   {
-    url: "https://astro.build/",
-    description: "Astro's official website",
+    url: "#",
+    description: "Club Atletismo Villaverde",
     icon: "mdi:home",
+    target: "_self"
   },
   {
-    url: "https://github.com/mhyfritz/astro-landing-page",
-    description: "View source on GitHub",
-    icon: "fa-brands:github-alt",
+    url: "https://www.instagram.com/clubatletismovillaverde/",
+    description: "Club Atletismo Villaverde en instagram",
+    icon: "fa-brands:instagram",
+    target: "_blank"
   },
   {
-    url: "https://astro.build/chat",
-    description: "Astro on Discord",
-    icon: "fa-brands:discord",
-  },
-  {
-    url: "https://twitter.com/astrodotbuild",
-    description: "Astro on Twitter",
+    url: "https://twitter.com/club_villaverde",
+    description: "Club Atletismo Villaverde en twitter",
     icon: "fa-brands:twitter",
-  },
+    target: "_blank"
+  }
 ];
 ---
 
@@ -38,6 +36,7 @@ const links: Array<FooterLink> = [
           <a
             class="flex h-16 w-16 items-center justify-center rounded-full border-2 border-current p-4"
             href={link.url}
+            target={link.target}
           >
             <span class="sr-only">{link.description}</span>
             <Icon class="h-full" name={link.icon} />

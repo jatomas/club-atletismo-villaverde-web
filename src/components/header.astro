@@ -4,9 +4,11 @@ import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 
 const navItems: Array<NavItem> = [
-  { title: "Features", url: "#features" },
-  { title: "Compatibility", url: "#compatibility" },
-  { title: "Showcase", url: "#showcase" },
+  { title: "¿Quiénes somos?", url: "#intro", target:"_self" },
+  { title: "Patrocinadores", url: "#patrocinadores", target:"_self" },
+  { title: "Galería", url: "#galeria", target:"_self" },
+  { title: "Únete al club!", url: "https://docs.google.com/forms/d/1et7CS5jVLRLQVlgG9luEC5Vfk3Ha3n_9Vf4QG7gtkos", target:"_blank" },
+  { title: "Contacto", url: "mailto:clubatletismovillaverde@gmail.com", target:"_blank" },
 ];
 ---
 
@@ -15,18 +17,18 @@ const navItems: Array<NavItem> = [
   class="absolute bottom-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
 >
   <a class="flex items-center gap-3 hover:!text-default" href="#">
-    <h1 class="sr-only">Astro</h1>
-    <Icon name="logomark" class="h-10" />
-    <Icon name="wordmark" class="hidden h-4 sm:block" />
+    <h1 class="sr-only">Club Atletismo Villaverde</h1>
+    <Icon name="logo-club-blanco" class="h-10" />
+    <Icon name="cav" class="hidden h-4 sm:block" />
   </a>
   <div>
     <div class="flex items-center gap-6">
       <nav class="hidden sm:block">
         <ul class="flex items-center gap-6">
           {
-            navItems.map(({ title, url }) => (
+            navItems.map(({ title, url, target }) => (
               <li>
-                <a class="text-sm" href={url}>
+                <a class="text-sm" href={url} target={target}>
                   {title}
                 </a>
               </li>
@@ -58,7 +60,7 @@ const navItems: Array<NavItem> = [
             </button>
           </header>
           <div class="flex justify-center">
-            <Icon name="logomark" class="h-16" />
+            <Icon name="logo-club-blanco" class="h-16" />
           </div>
           <nav>
             <ul class="flex flex-col">

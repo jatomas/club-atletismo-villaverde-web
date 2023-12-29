@@ -10,13 +10,22 @@ export interface FeatureItem {
   title: string;
 }
 
+export interface PatrocinadorItem {
+  image: ImageMetadata;
+  title: string;
+  description: string;
+  url: string;
+}
+
 export interface FooterLink {
   description: string;
   icon: string;
   url: string;
+  target: string;
 }
 
 export interface NavItem {
   title: string;
   url: string;
+  target: string;
 }

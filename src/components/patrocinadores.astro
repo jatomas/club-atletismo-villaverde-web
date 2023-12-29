@@ -1,0 +1,75 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import type { PatrocinadorItem } from "~/types";
+import { Image } from "astro:assets";
+import mercadoImage from "~/assets/patrocinadores/mercado-villaverde-alto.jpg";
+import alegriaImage from "~/assets/patrocinadores/la-alegria.jpg";
+import mancheguitaImage from "~/assets/patrocinadores/la-mancheguita.png";
+import clinicaImage from "~/assets/patrocinadores/perez-romero.jpg";
+import biocilismoImage from "~/assets/patrocinadores/biociclismo.jpg";
+import incoloraImage from "~/assets/patrocinadores/la-incolora.jpg";
+
+const patrocinadores: Array<PatrocinadorItem> = [
+  {
+    title: "Mercado Villaverde Alto",
+    description: "Asociación Profesional de Comerciantes del Mercado de Villaverde",
+    image: mercadoImage,
+    url: "https://mercadodevillaverde.es/"
+  },
+  {
+    title: "Bodega Restaurante La Alegría",
+    description: "Restaurante extremeño con miles de historias, cientos de vinos y decenas de platos para disfrutar.",
+    image: alegriaImage,
+    url: "https://es-es.facebook.com/BodegaRestauranteLaAlegria/"
+  },
+  {
+    title: "La Mancheguita 1978",
+    description: "Comida casera en Villaverde, Madrid",
+    image: mancheguitaImage,
+    url: "https://www.lamancheguita1978.com/es/"
+  },
+  {
+    title: "Centro Clínico Pérez Romero",
+    description: "Profesionales de la fisioterapia y la podología en Villaverde",
+    image: clinicaImage,
+    url: "https://centroclinicoperezromero.com/"
+  },
+  {
+    title: "Biociclismo",
+    description: "Nos gusta nuestro trabajo, y hemos convertido nuestro hobby y pasión en nuestra profesión.",
+    image: biocilismoImage,
+    url: "https://www.biociclismo.com/"
+  },
+  {
+    title: "La Incolora",
+    description: "Asociación Vecinal La Incolora de Villaverde Alto",
+    image: incoloraImage,
+    url: "https://incolora.org/"
+  }
+];
+---
+
+<ContentSection title="Patrocinadores" id="patrocinadores">
+  <Fragment slot="lead">
+    Queremos agradecer a nuestros <span class="text-primary">patrocinadores</span>, que con su apoyo, hacen posible que este
+    <span class="text-primary">proyecto</span>
+     salga <span class="text-primary">adelante</span>.
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      patrocinadores.map(({ title, description, image, url }) => (
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+          <Image
+            class="h-300 w-300 place-items-center"
+            src={image}
+            sizes="100vw"
+            alt="Club Atletismo Villaverde"
+          />
+          <a href={url} target="_blank"><p class="text-center font-extrabold text-xl">{title}</p></a>
+          <p class="text-center text-offset text-sm">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>

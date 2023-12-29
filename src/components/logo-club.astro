@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import logoImage from "~/assets/logo-club.png";
+
+const widths = [450, 450, 450];
+const sizes = "100vw";
+---
+
+<Image
+  class="h-300 w-300 place-items-center"
+  src={logoImage}
+  widths={widths}
+  sizes={sizes}
+  alt="Club Atletismo Villaverde"
+/>
