@@ -1,0 +1,34 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import type { PatrocinadorItem } from "~/types";
+import { Image } from "astro:assets";
+import mercadoImage from "~/assets/patrocinadores/mercado-villaverde-alto.jpg";
+---
+
+<ContentSection title="¡Únete!" id="unete">
+  <Fragment slot="lead">
+    Uniéndote a nuestro club <span class="text-primary">disfrutarás</span> de:
+  </Fragment>
+  <ul class="max-w-4xl text-center font-extrabold text-lg">
+    <li>Ser parte de un maravilloso <span class="text-primary">grupo</span> de personas apasionadas por el  <span class="text-primary">running</span>.</li>
+    <li>Entrega de la <span class="text-primary">camiseta</span> del Club Atletismo Villaverde.</li>
+    <li>Entrenamientos<span class="text-primary"> guiados</span> por nuestro coach <span class="text-primary">Benito Gala</span> los sábados.</li>
+    <li>Participación en <span class="text-primary">actividades</span> y <span class="text-primary">eventos</span> organizados por el club.</li>
+    <li>Dorsal para la <span class="text-primary">San Silvestre</span> de <span class="text-primary">Villaverde Alto</span></li>
+    <li>Descuentos en <span class="text-primary">carreras</span> de <span class="text-primary">barrio</span> y en <span class="text-primary">servicios</span> de nuestros <span class="text-primary">patrocinadores</span>.</li>
+    <li>Formar parte del <span class="text-primary">grupo</span> de <span class="text-primary">Whatsapp</span> organizado por el club.</li>
+    <li>Todo esto, por sólo <span class="text-primary">45€</span> al año.</li>
+  </ul>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-1">
+    <a
+        href="https://forms.gle/MFnLKkz9DuWkjdvC7"
+        class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+        target="_blank"
+      >
+      <Icon pack="mdi" name="rocket-launch" class="h-8" />
+      <span>Únete!</span>
+    </a>
+  </div>
+  </ul>
+</ContentSection>
