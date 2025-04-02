@@ -1,0 +1,36 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="Revista CAV" id="revista">
+  <Fragment slot="lead">
+    Descarga y disfruta del contenido de la <span class="text-primary">revista</span> del <span class="text-primary">Club Atletismo Villaverde</span>.
+  </Fragment>
+  <ul class="max-w-4xl text-center font-extrabold text-lg">
+    <li>
+      <span class="grid grid-cols-1 gap-2 sm:grid-cols-1">
+        <a
+            href="https://drive.google.com/file/d/1OYEkQBN5-jJ4hl8iaToWtfpptaRUikvE/view?usp=sharing"
+            class="flex items-center justify-center gap-3"
+            target="_blank"
+          >
+          <Icon pack="mdi" name="download" class="h-8" />
+          <span>Número 1 -<span class="text-primary"> Junio 2024</span> </span>
+        </a>
+      </span>
+    </li>
+    <li>
+      <span class="grid grid-cols-1 gap-2 sm:grid-cols-1">
+        <a
+            href="https://drive.google.com/file/d/1NJrqHgU61Zke7M3PgbPUbuMtGnsNdFcL/view?usp=sharing"
+            class="flex items-center justify-center gap-3"
+            target="_blank"
+          >
+          <Icon pack="mdi" name="download" class="h-8" />
+          <span>Número 2 -<span class="text-primary"> Noviembre 2024</span> </span>
+        </a>
+      </span>
+    </li>
+  </ul>
+</ContentSection>

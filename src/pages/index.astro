@@ -7,6 +7,7 @@ import Intro from "~/components/intro.astro";
 import Galeria from "~/components/galeria.astro";
 import Splash from "~/components/splash.astro";
 import Unete from "~/components/unete.astro";
+import Revista from "~/components/revista.astro";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
@@ -19,7 +20,7 @@ const description =
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/png" sizes="16x16"  href="src/assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16"  href="favicon.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <meta name="generator" content={generator} />
@@ -67,6 +68,7 @@ const description =
       <Intro />
       <Patrocinadores />
       <Unete />
+      <Revista />
       <Galeria />
     </div>
     <Footer />
