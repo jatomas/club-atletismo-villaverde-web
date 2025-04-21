@@ -13,12 +13,18 @@ import { Icon } from "astro-icon";
         <li>Nuestro club de <span class="text-primary">triatlón</span> está diseñado para atletas de todos los niveles, desde <span class="text-primary">principiantes</span> hasta <span class="text-primary">expertos</span>.</li>
         <li>Ofrecemos entrenamientos <span class="text-primary">personalizados</span> y <span class="text-primary">guiados</span> por entrenadores especializados.</li>
     </ul>
-    <Image
-        class="h-150 w-150 place-items-center"
-        src={TriatlonImage}
-        sizes="50vw"
-        alt="Triatlón  - Club Atletismo Villaverde"
-        />
+    <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <li class="flex flex-col items-center gap-4"></li>
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+            <Image
+                class="h-150 w-150 place-items-center"
+                src={TriatlonImage}
+                sizes="50vw"
+                alt="Triatlón  - Club Atletismo Villaverde"
+            />
+        </li>
+        <li class="flex flex-col items-center gap-4"></li>
+    </ul>
     <ul class="max-w-4xl text-center font-extrabold text-lg">
         <li>Participamos en eventos locales y nacionales, y ofrecemos entrenamientos especializados para mejorar en <span class="text-primary">natación</span>, <span class="text-primary">ciclismo</span> y <span class="text-primary">carrera</span>.</li>
     </ul>
