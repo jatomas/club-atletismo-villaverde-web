@@ -2,6 +2,7 @@
 import ContentSection from "~/components/content-section.astro";
 import TriatlonImage from "~/assets/triatlon.jpg";
 import { Image } from "astro:assets";
+import { Icon } from "astro-icon";
 ---
 
 <ContentSection title="Club de Triatlón" id="triatlon">
@@ -21,4 +22,14 @@ import { Image } from "astro:assets";
     <ul class="max-w-4xl text-center font-extrabold text-lg">
         <li>Participamos en eventos locales y nacionales, y ofrecemos entrenamientos especializados para mejorar en <span class="text-primary">natación</span>, <span class="text-primary">ciclismo</span> y <span class="text-primary">carrera</span>.</li>
     </ul>
+    <div class="grid grid-cols-1 gap-2 sm:grid-cols-1">
+    <a
+        href="https://forms.gle/MFnLKkz9DuWkjdvC7"
+        class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+        target="_blank"
+        >
+        <Icon pack="mdi" name="rocket-launch" class="h-8" />
+        <span>Únete!</span>
+    </a>
+    </div>
 </ContentSection>
